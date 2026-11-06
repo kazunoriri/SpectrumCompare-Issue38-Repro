@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-07",
+  "scope": "Only the independent public reproduction copy; no product source or private Git history.",
+  "prepublication_audit": {
+    "files_scanned": 30,
+    "real_local_paths_detected": 0,
+    "secrets_detected": 0,
+    "private_email_addresses_detected": 0,
+    "source_amxd_pairs_byte_identical_to_original_diagnostics": true,
+    "png_visual_review": "All evidence images reviewed; Live UI and diagnostic values only. No personal information observed.",
+    "material_review": "No audio, library grooves, MIDI clips/notes, third-party externals, or product runtime scripts in the public package."
+  },
+  "als": [
+    {
+      "file": "Live-tests Project/Primitive-tests.als",
+      "sha256": "b5dbd2e5ee8204f5b380a03c37ff6d362c0daf9cb7ef13134c5d1e96956c2606",
+      "grooves": 0,
+      "midi_notes": 0,
+      "clips": 0,
+      "samples": 0,
+      "device_count": 2,
+      "relative_refs": [
+        "../01-numeric-assign.amxd",
+        "../02-blob-persistence.amxd"
+      ],
+      "xml": "well-formed"
+    },
+    {
+      "file": "Live-tests Project/Shared-tests.als",
+      "sha256": "a41b341d3736aacf0351dde0f603725e5e5b0a45ec999e8db193ad8f0f57e45b",
+      "grooves": 0,
+      "midi_notes": 0,
+      "clips": 0,
+      "samples": 0,
+      "device_count": 2,
+      "relative_refs": [
+        "../03-shared-source-mirror.amxd",
+        "../03-shared-source-mirror.amxd"
+      ],
+      "xml": "well-formed"
+    }
+  ],
+  "native_observations": {
+    "context": "Manual Live GUI observations after Groove Pool cleanup; stopped transport.",
+    "shared": {
+      "initial": {
+        "A": [
+          8192,
+          0
+        ],
+        "B": [
+          8192,
+          0
+        ]
+      },
+      "after_A_smooth_edit": {
+        "A": [
+          8192,
+          50
+        ],
+        "B": [
+          8192,
+          50
+        ]
+      },
+      "after_one_undo": {
+        "A": [
+          4096,
+          0
+        ],
+        "B": [
+          4096,
+          0
+        ]
+      },
+      "after_one_redo": {
+        "A": [
+          8192,
+          50
+        ],
+        "B": [
+          8192,
+          50
+        ]
+      },
+      "history_increment": 1,
+      "interpretation": "Cross-setting symptom reproduced; internal host cause unproven."
+    },
+    "relocated_shared": {
+      "initial_both": [
+        8192,
+        0
+      ],
+      "after_A_smooth_edit_then_one_undo_both": [
+        4096,
+        0
+      ]
+    },
+    "relocated_primitive": {
+      "numeric_ON": 2,
+      "normal_state": "beta",
+      "assign_state": "baseline"
+    }
+  },
+  "unverified": [
+    "pattrstorage silent persistence",
+    "host transaction/notification contract",
+    "five-instance generalization",
+    "deletion/duplication lifecycle",
+    "other OS/Max/Live versions"
+  ]
+}
